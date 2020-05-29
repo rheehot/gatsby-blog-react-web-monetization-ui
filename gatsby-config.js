@@ -11,6 +11,14 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {},
     },
+    {
+      resolve: `@mdarrik/gatsby-theme-soundboard`,
+      options: {
+        soundPath: "content/sounds",
+        metadataPath: "content/sounds",
+        basePath: "/sounds",
+      },
+    },
   ],
   // Customize your site metadata:
   siteMetadata: {
