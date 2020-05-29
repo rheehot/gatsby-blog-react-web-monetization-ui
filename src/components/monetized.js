@@ -3,7 +3,7 @@
  * https://dev.to/emma/setting-up-web-monetization-on-your-gatsby-blog-with-rss-dgp
  */
 import React from "react"
-import { useMonetization } from "../hooks/useMonetization"
+import { useMonetization } from "../hooks/use-monetization"
 
 const Monetized = ({ children }) => {
   const { isMonetized, isLoading } = useMonetization()
