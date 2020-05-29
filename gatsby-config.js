@@ -1,5 +1,12 @@
 module.exports = {
   plugins: [
+    // DOES NOT WORK
+    // {
+    //   resolve: `gatsby-plugin-web-monetization`,
+    //   options: {
+    //     paymentPointer: "$ilp.uphold.com/2PPi8NqfxD2b",
+    //   },
+    // },
     {
       resolve: `gatsby-theme-blog`,
       options: {},
@@ -8,7 +15,7 @@ module.exports = {
   // Customize your site metadata:
   siteMetadata: {
     title: `Web Monetization Playground`,
-    author: `Eka`,
+    author: `@ekafyi`,
     description: `Lorem ipsum dolor sit amet`,
     social: [
       {
