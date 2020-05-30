@@ -2,7 +2,7 @@
  * Show whether monetization is running/active
  */
 import React from "react"
-import { useMonetization } from "../hooks/use-monetization"
+import { useMonetizationState } from "react-web-monetization"
 
 const cssTemporary = { textAlign: "center" }
 const activeEmoji = (
@@ -17,13 +17,15 @@ const inactiveEmoji = (
 )
 
 const MonetizeStatus = () => {
-  const { isMonetized, isLoading } = useMonetization()
+  const monetization = useMonetizationState()
+  console.log("monetization ", monetization)
 
-  if (isLoading) {
+  if (monetization.state === "pending") {
     return <div style={cssTemporary}>Loading...</div>
-  } else if (isMonetized) {
+  } else if (monetization.state === "started") {
     return <div style={cssTemporary}>{activeEmoji} Monetization is active</div>
   } else {
+    // monetization.state === 'stopped' || !monetization.state
     return (
       <div style={cssTemporary}>{inactiveEmoji} Monetization is not active</div>
     )
