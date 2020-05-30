@@ -5,7 +5,7 @@
 import React from "react"
 import { useMonetization } from "../hooks/use-monetization"
 
-const Monetized = ({ children }) => {
+const Exclusive = ({ children }) => {
   const { isMonetized, isLoading } = useMonetization()
 
   if (isLoading) {
@@ -17,4 +17,4 @@ const Monetized = ({ children }) => {
   }
 }
 
-export default Monetized
+export default Exclusive

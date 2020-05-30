@@ -9,7 +9,7 @@ import PostDate from "gatsby-theme-blog/src/components/post-date"
 import PostFooter from "gatsby-theme-blog/src/components/post-footer"
 import PostHero from "gatsby-theme-blog/src/components/post-hero"
 
-import Monetized from "../../components/monetized"
+import Exclusive from "../../components/exclusive"
 
 const Post = ({
   data: {
@@ -38,7 +38,7 @@ const Post = ({
       <PostHero post={post} />
       <PostTitle>{post.title}</PostTitle>
       <PostDate>{post.date}</PostDate>
-      <MDXProvider components={{ Monetized }}>
+      <MDXProvider components={{ Exclusive }}>
         <MDXRenderer>{post.body}</MDXRenderer>
       </MDXProvider>
     </main>
