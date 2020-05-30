@@ -34,6 +34,9 @@ const Post = ({
       keywords={post.keywords}
       imageAlt={post.imageAlt}
     />
+    <Helmet>
+      <meta name="monetization" content="$ilp.uphold.com/2PPi8NqfxD2b" />
+    </Helmet>
     <main>
       <PostHero post={post} />
       <PostTitle>{post.title}</PostTitle>
