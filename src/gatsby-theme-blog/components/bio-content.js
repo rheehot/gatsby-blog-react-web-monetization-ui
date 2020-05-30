@@ -1,10 +1,20 @@
 import React from "react"
-// import { Styled } from "theme-ui"
 
 /**
  * Change the content to add your own bio
  */
 
 export default function Bio() {
-  return <>This is a test site by to try the Web Monetization API by @ekafyi.</>
+  return (
+    <>
+      Test site to try the Web Monetization API by{" "}
+      <a href="https://dev.to/@ekafyi" rel="external">
+        @ekafyi
+      </a>
+      . Photo by{" "}
+      <a href="https://unsplash.com/@micheile" rel="external">
+        Micheile Henderson
+      </a>
+    </>
+  )
 }
