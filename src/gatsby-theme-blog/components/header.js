@@ -1,12 +1,12 @@
 import React from "react"
 import OriginalHeader from "gatsby-theme-blog/src/components/header"
 
-import MonetizeStatus from "../../components/monetize-status"
+import { MonetizationStatus } from "react-web-monetization-ui"
 
 const Header = props => (
   <>
     <OriginalHeader {...props} />
-    <MonetizeStatus />
+    <MonetizationStatus style={{ textAlign: "center" }} />
   </>
 )
 

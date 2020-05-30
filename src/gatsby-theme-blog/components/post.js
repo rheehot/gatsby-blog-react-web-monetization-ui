@@ -9,7 +9,7 @@ import PostDate from "gatsby-theme-blog/src/components/post-date"
 import PostFooter from "gatsby-theme-blog/src/components/post-footer"
 import PostHero from "gatsby-theme-blog/src/components/post-hero"
 
-import Exclusive from "../../components/exclusive"
+import { ExclusiveContent } from "react-web-monetization-ui"
 
 const Post = ({
   data: {
@@ -38,7 +38,7 @@ const Post = ({
       <PostHero post={post} />
       <PostTitle>{post.title}</PostTitle>
       <PostDate>{post.date}</PostDate>
-      <MDXProvider components={{ Exclusive }}>
+      <MDXProvider components={{ ExclusiveContent }}>
         <MDXRenderer>{post.body}</MDXRenderer>
       </MDXProvider>
     </main>

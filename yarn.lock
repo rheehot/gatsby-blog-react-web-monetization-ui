@@ -12141,6 +12141,11 @@ react-switch@^5.0.1:
   dependencies:
     prop-types "^15.6.2"
 
+react-web-monetization-ui@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-web-monetization-ui/-/react-web-monetization-ui-0.1.1.tgz#a0fead04008d216f5f433191fc553bfd1381dbf9"
+  integrity sha512-W7CSu0jBER5MyXSPs74eNtku5gSx3WP0/PQH8yqSo4FnGTR0Ic9x0FMXPj3ci4BnzBEjrDScltZ7w9hZ8N2XKQ==
+
 react-web-monetization@^0.0.13:
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/react-web-monetization/-/react-web-monetization-0.0.13.tgz#2a36e8b543fa9ba8f67cff96db09ae8361a04fa4"
