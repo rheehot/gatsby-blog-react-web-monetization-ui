@@ -31,6 +31,7 @@ export const useMonetization = () => {
 
       // We add a listener to wait for the user to start paying
       document.monetization.addEventListener("monetizationstart", () => {
+        console.log("🤑 monetization starts!")
         setIsMonetized(true)
         setIsLoading(false)
       })

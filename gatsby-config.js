@@ -11,6 +11,7 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {},
     },
+    `gatsby-plugin-react-helmet`,
   ],
   // Customize your site metadata:
   siteMetadata: {

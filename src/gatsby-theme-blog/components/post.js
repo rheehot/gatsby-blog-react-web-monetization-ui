@@ -1,6 +1,7 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { Helmet } from "react-helmet"
 
 import Layout from "gatsby-theme-blog/src/components/layout"
 import SEO from "gatsby-theme-blog/src/components/seo"
@@ -34,6 +35,9 @@ const Post = ({
       keywords={post.keywords}
       imageAlt={post.imageAlt}
     />
+    <Helmet>
+      <meta name="monetization" content="$ilp.uphold.com/2PPi8NqfxD2b" />
+    </Helmet>
     <main>
       <PostHero post={post} />
       <PostTitle>{post.title}</PostTitle>
