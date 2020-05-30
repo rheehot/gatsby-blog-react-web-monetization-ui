@@ -1,12 +1,12 @@
 module.exports = {
   plugins: [
-    // DOES NOT WORK
-    // {
-    //   resolve: `gatsby-plugin-web-monetization`,
-    //   options: {
-    //     paymentPointer: "$ilp.uphold.com/2PPi8NqfxD2b",
-    //   },
-    // },
+    {
+      // web-monetization plugin only runs on production env
+      resolve: `gatsby-plugin-web-monetization`,
+      options: {
+        paymentPointer: "$ilp.uphold.com/2PPi8NqfxD2b",
+      },
+    },
     {
       resolve: `gatsby-theme-blog`,
       options: {},
